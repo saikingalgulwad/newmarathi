@@ -28,7 +28,7 @@ const [userInfo2 ,setUserInfo2]=useState(null)
 
   const getuserPin =async () =>{
 
-    const res = await fetch(`http://localhost:3000/api/usersPost/Post`,{cache:"no-store"});
+    const res = await fetch(`https://full-stack-v3px.vercel.app/api/usersPost/Post`,{cache:"no-store"});
     const userPin = await res.json();
     if(userPin===null){
   

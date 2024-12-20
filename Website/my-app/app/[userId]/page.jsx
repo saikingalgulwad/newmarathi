@@ -24,7 +24,7 @@ function page({params}) {
 
 const getuserPin =async (email) =>{
 
-  const res = await fetch(`http://localhost:3000/api/usersPost?search=${email}`,{cache:"no-store"});
+  const res = await fetch(`https://full-stack-v3px.vercel.app/api/usersPost?search=${email}`,{cache:"no-store"});
   const userPin = await res.json();
   if(userPin===null){
 

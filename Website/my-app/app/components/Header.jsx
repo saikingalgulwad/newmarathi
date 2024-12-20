@@ -16,7 +16,7 @@ useEffect(()=>{
 
    const saveUserInfo = async()=>{
     if(session?.user){
-      await fetch("http://localhost:3000/api/users",{
+      await fetch("https://full-stack-v3px.vercel.app/api/users",{
         method:"POST",
         body: JSON.stringify({ user : session.user }),
       })

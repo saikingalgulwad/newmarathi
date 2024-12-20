@@ -29,7 +29,7 @@ function Form() {
 
     const uploadFile=async()=>{
       if(session?.user){
-        await fetch("http://localhost:3000/api/usersPost",{
+        await fetch("https://full-stack-v3px.vercel.app/api/usersPost",{
           method:"POST",
           body: JSON.stringify({ title:title,desc:desc,link:link,image:file,userName:session.user.name,email:session.user.email,userImage:session.user.image,data:postId }),
         })
