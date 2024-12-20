@@ -29,7 +29,7 @@ function Form() {
 
     const uploadFile=async()=>{
       if(session?.user){
-        await fetch("https://saikingnext-git-main-saiprasads-projects-5a7842c7.vercel.app/api/usersPost",{
+        await fetch("https://saikingnext.vercel.app/api/usersPost",{
           method:"POST",
           body: JSON.stringify({ title:title,desc:desc,link:link,image:file,userName:session.user.name,email:session.user.email,userImage:session.user.image,data:postId }),
         })

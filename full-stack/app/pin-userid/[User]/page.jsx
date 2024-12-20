@@ -30,7 +30,7 @@ const router = useRouter();
     
     const getuserPin =async (email) =>{
     
-      const res = await fetch(`https://saikingnext-git-main-saiprasads-projects-5a7842c7.vercel.app/api/userId/${email}`,{cache:"no-store"});
+      const res = await fetch(`https://saikingnext.vercel.app/api/userId/${email}`,{cache:"no-store"});
       const userPin = await res.json();
       if(userPin===null){
     
