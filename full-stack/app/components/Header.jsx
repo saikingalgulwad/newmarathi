@@ -16,7 +16,7 @@ useEffect(()=>{
 
    const saveUserInfo = async()=>{
     if(session?.user){
-      await fetch("https://saiking-next.vercel.app/api/users",{
+      await fetch("https://saikingnext-git-main-saiprasads-projects-5a7842c7.vercel.app/api/users",{
         method:"POST",
         body: JSON.stringify({ user : session.user }),
       })
