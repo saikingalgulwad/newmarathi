@@ -28,7 +28,7 @@ export default async function Home({ searchParams }) {
     <div className="bg-gray-900 min-h-screen text-white">
       {/* Navbar */}
       <nav className="bg-gray-800 shadow-md py-4">
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
       <Link href={'/'}  > <Image src={names} alt="logo" width={60} height={60} className="m-0 p-0 rounded-lg" /> </Link>
           <form method="get" className="flex">
             <input
