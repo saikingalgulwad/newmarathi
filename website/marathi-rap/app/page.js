@@ -40,7 +40,7 @@ export default async function Home({ searchParams }) {
             />
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg ml-2"
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg mt-2 sm:mt-0 sm:ml-2 w-full sm:w-auto"
             >
               Search
             </button>
