@@ -30,13 +30,13 @@ export default async function Home({ searchParams }) {
       <nav className="bg-gray-800 shadow-md py-4">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center">
       <Link href={'/'}  > <Image src={names} alt="logo" width={60} height={60} className="m-0 p-0 rounded-lg" /> </Link>
-          <form method="get" className="flex">
+          <form method="get" className="flex flex-wrap mt-4 sm:mt-0 sm:flex-nowrap w-full sm:w-auto">
             <input
               type="text"
               name="query"
               defaultValue={query}
               placeholder="Search..."
-              className="bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-500"
+              className="bg-gray-700 text-white rounded-lg px-4 py-2 w-full sm:w-auto  focus:outline-none focus:ring-2 focus:ring-gray-500"
             />
             <button
               type="submit"
