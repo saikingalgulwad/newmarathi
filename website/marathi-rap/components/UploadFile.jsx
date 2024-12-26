@@ -24,7 +24,7 @@ function UploadFile() {
 
  const uploadFile=async()=>{
  
-   let req= await fetch("https://marathi-rap-git-main-saiprasads-projects-5a7842c7.vercel.app/api/usersPost",{
+   let req= await fetch("https://marathi-rap.vercel.app/api/usersPost",{
       method:"POST",
       body: JSON.stringify({ file:file,songName:songName,song:song }),
     })
