@@ -20,7 +20,7 @@ import Link from 'next/link';
       <nav className="bg-gray-800 shadow-md py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
       <Link href={'/'} >   <Image src={names} alt="logo" width={60} height={60} className="m-0 p-0 rounded-lg" /></Link>
-     <Button><Link href={'/'}>Home</Link></Button>
+     <Link href={'/'}><Button>Home</Button></Link>
         </div>
       </nav>
 
