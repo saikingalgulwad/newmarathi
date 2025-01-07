@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-    <link rel='icon' type='image/png' href='@/public/logo1.png'/>
+    <link rel='icon' type='image/png' href='./public/logo1.png'/>
     </head>
       <body
        className={outfit.className}
