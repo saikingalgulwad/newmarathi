@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {Outfit} from "next/font/google"
-import names from '@/public/logo1.png'
+
 const outfit=Outfit({subsets:['latin']});
 
 
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-    <link rel='icon' type='image/png' href={names}/>
+    <link rel='icon' type='image/png' href='@/public/logo1.png'/>
     </head>
       <body
        className={outfit.className}
