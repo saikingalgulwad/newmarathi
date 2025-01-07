@@ -22,7 +22,8 @@ export async function searchSongs(query) {
 
 export default async function Home({ searchParams }) {
   const query = searchParams?.query || ""; // Directly access searchParams without awaiting
-  const cards = await searchSongs(query); // Fetch songs based on the query
+  const cardslist = await searchSongs(query); 
+  const cards = cardslist.sort()// Fetch songs based on the query
 
   return (
     <div className="bg-gray-900 min-h-screen text-white">
