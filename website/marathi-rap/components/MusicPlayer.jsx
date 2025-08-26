@@ -64,13 +64,13 @@ export default function MusicPlayer({ playlist }) {
     } else {
       setCurrentIndex((prev) => (prev + 1) % playlist.length);
     }
-    setIsPlaying(true); // mark as playing
+    setIsPlaying(true);
   };
 
   // Prev song
   const prevSong = () => {
     setCurrentIndex((prev) => (prev - 1 + playlist.length) % playlist.length);
-    setIsPlaying(true); // mark as playing
+    setIsPlaying(true);
   };
 
   // Handle ended
@@ -97,7 +97,7 @@ export default function MusicPlayer({ playlist }) {
     <div className="fixed bottom-0 left-0 w-full bg-[#121212] text-white p-4 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-6">
       {/* Song Info */}
       <div className="flex items-center space-x-3 w-full md:w-auto">
-        <img src={currentSong.songImage} alt="cover" className="w-12 h-12 rounded" />
+        <img src={currentSong.file} alt="cover" className="w-12 h-12 rounded" />
         <div>
           <h3 className="text-sm font-semibold">{currentSong.songName}</h3>
           <p className="text-xs text-gray-400">Unknown Artist</p>
@@ -183,7 +183,7 @@ export default function MusicPlayer({ playlist }) {
       </div>
 
       {/* Audio */}
-      <audio ref={audioRef} src={currentSong.songAudio} onEnded={handleEnded} />
+      <audio ref={audioRef} src={currentSong.song} onEnded={handleEnded} />
     </div>
   );
 }
