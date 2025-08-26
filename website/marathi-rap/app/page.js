@@ -3,6 +3,7 @@ import { songs } from "@/lib/model/song";
 import Image from "next/image";
 import names from "@/public/logo1.png";
 import Listes from "@/components/Listes";
+import MusicPlayer from "@/components/MusicPlayer";
 import Link from "next/link";
 
 // Server action to fetch songs based on query
@@ -58,6 +59,7 @@ export default async function Home({ searchParams }) {
             </Link>
           ))}
         </div>
+             <MusicPlayer playlist={cards} />
       </div>
     </div>
   );
