@@ -20,7 +20,7 @@ export async function searchSongs(query) {
    const data = await songs.find({
     songName: { $regex: query, $options: "i" },
   });
-  if(!data){
+  if(data==null){
      return await songs.find();
   }else{
      return data;
