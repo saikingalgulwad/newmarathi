@@ -16,9 +16,15 @@ export async function searchSongs(query) {
   }
 
   // Perform a case-insensitive search using MongoDB's $regex
-  return await songs.find({
+ 
+   const data = await songs.find({
     songName: { $regex: query, $options: "i" },
   });
+  if(!data){
+     return await songs.find();
+  }else{
+     return data;
+  }
 }
 
 export default async function Home({ searchParams }) {
